@@ -1,5 +1,7 @@
 # (In Development) react-ol
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.7702582.svg)](https://doi.org/10.5281/zenodo.7702582)
+
 React component library for OpenLayers.
 
 ## Example
