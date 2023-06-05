@@ -1,5 +1,5 @@
 import React, { useRef, useState, useEffect } from "react"
-import "./Map.scss";
+import "./index.css";
 import MapContext from "./MapContext";
 import {
   Map as OLMap,
@@ -7,8 +7,16 @@ import {
 } from "ol"
 
 
-
-const Map = ({ children, zoom, center, projection='EPSG:3857', extent=undefined, mapClass="ol-map", altView=null, triggerExternalLayerRender=null}) => {
+const Map = ({ 
+  children, 
+  zoom, 
+  center, 
+  projection='EPSG:3857',
+  extent=undefined,
+  mapClass="ol-map", 
+  altView=null, 
+  triggerExternalLayerRender=null
+}) => {
   const mapRef = useRef();
   const [map, setMap] = useState(null);
  
@@ -40,8 +48,6 @@ const Map = ({ children, zoom, center, projection='EPSG:3857', extent=undefined,
   useEffect(() => {
     if (!map || !altView) return;
     map.setView(altView.getView())
-    console.log("altView", altView)
-    console.log("map + view", map.getView())
   }, [map, altView]);
 
   // zoom change handler

@@ -31,7 +31,7 @@
  */
 
 import Controls from "./Controls";
-import FullScreenControl from "./FullScreenControl";
+import { FullScreenControl } from "./FullScreenControl";
 import ZoomSliderControl from "./ZoomSliderControl";
 import ScaleLineControl from "./ScaleLineControl";
 import RotateControl from "./RotateControl";
